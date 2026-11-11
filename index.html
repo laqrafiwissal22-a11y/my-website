@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17130f">
+  <meta name="description" content="النسيم ... أناقتك في كل تفاصيلك. اكتشفوا منتجات الجمال والعناية والإكسسوارات في متجر مغربي أنيق.">
+  <meta property="og:title" content="النسيم | Enassime Shop — النسيم ... أناقتك في كل تفاصيلك">
+  <meta property="og:description" content="النسيم ... أناقتك في كل تفاصيلك — اكتشفوا اختيارات الجمال والعناية بالمغرب.">
+  <meta property="og:image" content="/enassime-logo.png">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="/">
+  <link rel="icon" href="/enassime-logo.png" type="image/png">
+  <link rel="stylesheet" href="/styles.css">
+  <title>النسيم | Enassime Shop — أناقتك في كل تفاصيلك</title>
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <div class="announcement"><span data-i18n="announcement">Une sélection beauté, choisie avec attention au Maroc</span><a href="https://wa.me/212707256090" target="_blank" rel="noopener" data-i18n="askUs">Une question ? Écrivez-nous</a></div>
+  <header class="site-header">
+    <div class="header-main">
+      <a class="brand" href="/" aria-label="النسيم ... أناقتك في كل تفاصيلك">
+        <img src="/enassime-logo.png" alt="">
+        <span class="brand-type"><strong>النسيم</strong><small>ENASSIME SHOP</small><em>النسيم ... أناقتك في كل تفاصيلك</em></span>
+      </a>
+      <form class="search" id="search-form" role="search">
+        <label class="sr-only" for="search-input" data-i18n="searchLabel">Rechercher un produit</label>
+        <span aria-hidden="true">⌕</span>
+        <input id="search-input" type="search" autocomplete="off" placeholder="Rechercher un soin, un parfum…" data-i18n-placeholder="searchPlaceholder">
+        <button type="submit" data-i18n="search">Rechercher</button>
+      </form>
+      <div class="header-actions">
+        <button class="icon-action language-toggle" id="language-toggle" aria-label="Changer de langue">العربية</button>
+        <button class="icon-action" id="favorites-open" aria-label="Favoris"><span aria-hidden="true">♡</span><span class="action-label" data-i18n="favorites">Favoris</span><b id="favorites-count">0</b></button>
+        <button class="icon-action cart-open" id="cart-open" aria-label="Ouvrir le panier"><span aria-hidden="true" class="header-icon"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 13H6L5 8Z"></path><path d="M9 8V6a3 3 0 0 1 6 0v2"></path></svg></span><span class="action-label" data-i18n="cart">Panier</span><b id="cart-count">0</b></button>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="#catalogue" data-i18n="navAll">Tout le catalogue</a>
+      <a href="#catalogue" data-filter-link="Cheveux" data-i18n="catHair">Cheveux</a>
+      <a href="#catalogue" data-filter-link="Soin du visage" data-i18n="catSkin">Visage & soins</a>
+      <a href="#catalogue" data-filter-link="Parfums" data-i18n="catPerfume">Parfums</a>
+      <a href="#catalogue" data-filter-link="Maquillage" data-i18n="catMakeup">Maquillage</a>
+      <a href="#catalogue" data-filter-link="Accessoires beauté" data-i18n="catAccessories">Accessoires</a>
+      <a class="nav-contact" href="#contact" data-i18n="help">Aide & contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-page hidden" id="product-page"></section>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="heroEyebrow">L’univers Enassime</span></span>
+        <h1 id="hero-title">La beauté, dans chaque détail.</h1>
+        <p id="hero-text">Une sélection de soins et d’accessoires, choisie avec attention au Maroc.</p>
+        <div class="hero-buttons"><a class="button button-dark" href="#catalogue"><span data-i18n="explore">Découvrir la sélection</span><span aria-hidden="true">↗</span></a><a class="text-link" href="https://wa.me/212707256090" target="_blank" rel="noopener" data-i18n="whatsappHelp">Parler sur WhatsApp</a></div>
+        <div class="hero-assurance"><span>✦</span><span data-i18n="heroNote">Prix et disponibilité confirmés avant votre commande</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-orbit"></div>
+        <div class="hero-frame"><img src="/products/029.jpg" alt="مجموعة منتجات عناية وجمال مصورة ضمن منتجات النسيم" fetchpriority="high"></div>
+        <div class="hero-sticker"><span data-i18n="heroStickerTop">مختارة بعناية</span><strong data-i18n="heroStickerBottom">من أجلك</strong><span class="sticker-star">✳</span></div>
+        <div class="hero-caption"><span class="caption-line"></span><span data-i18n="heroCaption">الجمال والعناية · المغرب</span></div>
+      </div>
+      <div class="hero-grain" aria-hidden="true"></div>
+    </section>
+
+    <section class="category-section section-wrap">
+      <div class="section-heading">
+        <div><span class="eyebrow" data-i18n="categoryEyebrow">À votre rythme</span><h2 data-i18n="categoryTitle">Explorez nos univers</h2></div>
+        <a class="text-link" href="#catalogue" data-i18n="viewAll">Voir tout le catalogue <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="category-list" id="category-list"></div>
+    </section>
+
+    <section class="trust-strip" aria-label="معلومات المتجر">
+      <div><span class="trust-icon">◈</span><span data-i18n="trustSelection">صور المنتجات المتوفرة</span></div>
+      <div><span class="trust-icon">◇</span><span data-i18n="trustPrices">تأكيد السعر قبل الطلب</span></div>
+      <div><span class="trust-icon">⌁</span><span data-i18n="trustSupport">خدمة العملاء عبر واتساب</span></div>
+      <div><span class="trust-icon">◉</span><span data-i18n="trustDelivery">التوصيل حسب المدينة</span></div>
+    </section>
+
+    <section class="catalog-section section-wrap" id="catalogue">
+      <div class="section-heading catalog-heading">
+        <div><span class="eyebrow" data-i18n="catalogEyebrow">La sélection Enassime</span><h2 data-i18n="catalogTitle">Les essentiels, pour vous</h2><p data-i18n="catalogLead">Parcourez les produits photographiés dans notre collection.</p></div>
+        <span class="product-count" id="product-count"></span>
+      </div>
+      <div class="catalog-toolbar">
+        <div class="filters">
+          <label for="category-filter" class="sr-only" data-i18n="filterCategory">Catégorie</label>
+          <select id="category-filter"><option value="" data-i18n="allCategories">Toutes les catégories</option></select>
+          <label class="price-filter"><span data-i18n="filterMax">Prix max.</span><input id="price-filter" type="number" min="0" placeholder="DH" aria-label="Prix maximum en dirhams"><span>DH</span></label>
+        </div>
+        <label class="sort-control"><span data-i18n="sortBy">Trier par</span><select id="sort-select"><option value="featured" data-i18n="sortFeatured">Notre sélection</option><option value="price-low" data-i18n="sortPriceLow">Prix croissant</option><option value="price-high" data-i18n="sortPriceHigh">Prix décroissant</option><option value="name" data-i18n="sortName">Nom A–Z</option></select></label>
+      </div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <div class="empty-state hidden" id="empty-state"><span>⌕</span><h3 data-i18n="emptyTitle">Aucun produit trouvé</h3><p data-i18n="emptyText">Essayez une autre recherche ou catégorie.</p><button class="button button-outline" id="clear-filters" data-i18n="clearFilters">Effacer les filtres</button></div>
+      <p class="catalog-note"><span>ⓘ</span><span data-i18n="priceNote">Les prix, stocks et frais de livraison ne sont publiés qu’après confirmation. Contactez-nous pour connaître la disponibilité.</span></p>
+    </section>
+
+    <section class="brand-story">
+      <div class="story-image"><img src="/products/058.jpg" alt="عطر مصور من مجموعة منتجات النسيم" loading="lazy"><span class="story-ornament">✳</span></div>
+      <div class="story-copy"><span class="eyebrow" data-i18n="storyEyebrow">النسيم · Enassime</span><h2 data-i18n="storyTitle">أناقتك في كل تفاصيلك</h2><p data-i18n="storyText">متجر مغربي يختار لكم منتجات الجمال والعناية، ويواكبكم من أول سؤال حتى تأكيد الطلب.</p><a class="button button-light" href="https://wa.me/212707256090" target="_blank" rel="noopener"><span data-i18n="contactAdvisor">تواصلوا مع فريقنا</span><span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <section class="faq-section section-wrap" id="faq">
+      <div class="section-heading"><div><span class="eyebrow" data-i18n="faqEyebrow">En toute confiance</span><h2 data-i18n="faqTitle">Vos questions, nos réponses</h2></div></div>
+      <div class="faq-grid">
+        <details><summary data-i18n="faqPriceQ">Comment connaître le prix d’un produit ?</summary><p data-i18n="faqPriceA">Nos prix sont en cours de vérification. Demandez-nous le prix et la disponibilité sur WhatsApp avant de commander.</p></details>
+        <details><summary data-i18n="faqDeliveryQ">Quels sont les frais et délais de livraison ?</summary><p data-i18n="faqDeliveryA">Les frais et délais dépendent de votre ville et du transporteur. Nous vous les confirmons avant toute validation de commande.</p></details>
+        <details><summary data-i18n="faqPaymentQ">Quels moyens de paiement acceptez-vous ?</summary><p data-i18n="faqPaymentA">Le paiement à la livraison sera proposé uniquement après confirmation des conditions du transporteur. Contactez-nous pour vérifier les options disponibles.</p></details>
+        <details><summary data-i18n="faqReturnQ">Comment faire un retour ?</summary><p data-i18n="faqReturnA">Contactez-nous avant tout retour afin de confirmer les modalités applicables à votre article et votre commande.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-main">
+      <div class="footer-brand"><a class="footer-wordmark" href="/" aria-label="النسيم ... أناقتك في كل تفاصيلك"><img src="/enassime-logo.png" alt=""><span class="brand-type"><strong>النسيم</strong><small>ENASSIME SHOP</small><em>النسيم ... أناقتك في كل تفاصيلك</em></span></a><p data-i18n="footerAbout">Beauté, soins et petites attentions — sélectionnés au Maroc.</p></div>
+      <div><h3 data-i18n="footerShop">La boutique</h3><a href="#catalogue" data-i18n="navAll">Tout le catalogue</a><a href="#faq" data-i18n="footerFAQ">Questions fréquentes</a><a href="#catalogue" data-filter-link="Cheveux" data-i18n="catHair">Cheveux</a></div>
+      <div><h3 data-i18n="footerHelp">Besoin d’aide ?</h3><a href="tel:+212707256090">0707256090</a><a href="mailto:Enassimeshop@gmail.com">Enassimeshop@gmail.com</a><a href="https://wa.me/212707256090" target="_blank" rel="noopener" data-i18n="footerWhatsApp">WhatsApp · réponse directe</a></div>
+      <div><h3 data-i18n="footerPolicies">Informations</h3><a href="#delivery-info" data-i18n="footerDelivery">Livraison & paiement</a><a href="#returns-info" data-i18n="footerReturns">Retours</a><a href="#sales-info" data-i18n="footerTerms">Conditions de vente</a><a href="#privacy-info" data-i18n="footerPrivacy">Confidentialité</a><button class="footer-admin" id="admin-open" data-i18n="footerAdmin">Espace administrateur</button></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="current-year"></span> النسيم | Enassime Shop</span><span data-i18n="footerCurrency">Prix en dirhams marocains (DH), à confirmer avant achat.</span></div>
+    <div class="policy-details">
+      <details id="delivery-info"><summary data-i18n="footerDelivery">Livraison & paiement</summary><p data-i18n="policyDelivery">Livraison disponible au Maroc, sous réserve de confirmation de votre ville, des frais, des délais et des conditions du transporteur. Le paiement à la livraison n’est proposé que si le transporteur le permet.</p></details>
+      <details id="returns-info"><summary data-i18n="footerReturns">Retours</summary><p data-i18n="policyReturns">Les conditions de retour et d’échange sont communiquées par notre service client avant la confirmation de votre commande. Contactez-nous à Enassimeshop@gmail.com ou au +212 707-256090.</p></details>
+      <details id="sales-info"><summary data-i18n="footerTerms">Conditions de vente</summary><p data-i18n="policyTerms"></p></details>
+      <details id="privacy-info"><summary data-i18n="footerPrivacy">Confidentialité</summary><p data-i18n="policyPrivacy">Les coordonnées fournies lors d’une demande de commande sont utilisées pour la traiter et vous contacter à son sujet. Elles sont conservées dans la base de données du commerçant. Pour une demande de suppression, écrivez à Enassimeshop@gmail.com.</p></details>
+    </div>
+  </footer>
+
+  <button class="floating-cart" id="floating-cart" type="button" aria-label="فتح السلة" title="اضغط واسحب لتحريك السلة" aria-describedby="floating-cart-hint">
+    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 8h14l-1 13H6L5 8Z"></path><path d="M9 8V6a3 3 0 0 1 6 0v2"></path></svg>
+    <span class="floating-cart-count" id="floating-cart-count" aria-hidden="true">0</span>
+  </button>
+  <span class="sr-only" id="floating-cart-hint">اضغط واسحب لتحريك السلة</span>
+  <div class="overlay hidden" id="overlay"></div>
+  <aside class="drawer hidden" id="cart-drawer" aria-label="Panier" aria-modal="true" role="dialog">
+    <div class="drawer-head"><div><span class="eyebrow" data-i18n="yourSelection">Votre sélection</span><h2 data-i18n="cart">Panier</h2></div><button class="close-button" data-close aria-label="Fermer">×</button></div>
+    <div class="drawer-content" id="cart-content"></div>
+    <div class="drawer-foot hidden" id="cart-foot"><div class="cart-totals" id="cart-totals"></div><p class="cart-notice" data-i18n="cartPriceNotice">Les prix sont à confirmer par notre équipe avant la commande.</p><button class="button button-dark button-full" id="checkout-open" data-i18n="requestOrder">Demander une commande</button></div>
+  </aside>
+  <aside class="drawer hidden" id="favorites-drawer" aria-label="Favoris" aria-modal="true" role="dialog">
+    <div class="drawer-head"><div><span class="eyebrow" data-i18n="yourSelection">Votre sélection</span><h2 data-i18n="favorites">Favoris</h2></div><button class="close-button" data-close aria-label="Fermer">×</button></div>
+    <div class="drawer-content" id="favorites-content"></div>
+  </aside>
+
+  <dialog class="modal product-modal" id="product-modal"><button class="close-button modal-close" data-close aria-label="Fermer">×</button><div id="product-detail"></div></dialog>
+  <dialog class="modal checkout-modal" id="checkout-modal">
+    <button class="close-button modal-close" data-close aria-label="Fermer">×</button>
+    <span class="eyebrow" data-i18n="guestCheckout">Commande sans compte</span><h2 data-i18n="checkoutTitle">Où vous livrer ?</h2>
+    <p class="modal-intro" data-i18n="checkoutIntro">Nous vous contacterons pour confirmer la disponibilité, les frais et le délai avant expédition.</p>
+    <form id="checkout-form">
+      <label><span data-i18n="formName">Nom complet</span><input name="customer_name" required minlength="2" maxlength="120" autocomplete="name"></label>
+      <label><span data-i18n="formPhone">Téléphone marocain</span><input name="phone" type="tel" required placeholder="06 00 00 00 00" autocomplete="tel" pattern="(?:\+212|0)[5-7][0-9]{8}"></label>
+      <label><span data-i18n="formCity">Ville</span><input name="city" required minlength="2" maxlength="100" autocomplete="address-level2"></label>
+      <label><span data-i18n="formAddress">Adresse de livraison</span><textarea name="address" required minlength="5" maxlength="500" rows="3" autocomplete="street-address"></textarea></label>
+      <label><span data-i18n="formNote">Instructions (facultatif)</span><textarea name="note" maxlength="500" rows="2"></textarea></label>
+      <div class="checkout-summary" id="checkout-summary"></div>
+      <div class="checkout-notice"><span>ⓘ</span><span data-i18n="checkoutCOD">Le paiement et la livraison seront confirmés avec vous avant validation.</span></div>
+      <button class="button button-dark button-full" type="submit" data-i18n="confirmOrder">Envoyer la demande de commande</button>
+      <p class="form-feedback" id="checkout-feedback" role="status"></p>
+    </form>
+  </dialog>
+
+  <dialog class="modal admin-modal" id="admin-modal">
+    <button class="close-button modal-close" data-close aria-label="Fermer">×</button>
+    <div id="admin-login">
+      <span class="eyebrow" data-i18n="adminEyebrow">Gestion sécurisée</span><h2 data-i18n="adminTitle">Espace administrateur</h2>
+      <p class="modal-intro" data-i18n="adminIntro">Connectez-vous avec le mot de passe configuré au lancement du serveur.</p>
+      <form id="login-form"><label><span data-i18n="adminPassword">Mot de passe administrateur</span><input name="password" type="password" required autocomplete="current-password"></label><button class="button button-dark button-full" type="submit" data-i18n="adminLogin">Se connecter</button><p class="form-feedback" id="login-feedback" role="status"></p></form>
+    </div>
+    <div id="admin-panel" class="hidden">
+      <div class="admin-heading"><div><span class="eyebrow" data-i18n="adminEyebrow">Gestion sécurisée</span><h2 data-i18n="adminTitle">Espace administrateur</h2></div><button class="button button-outline" id="admin-logout" data-i18n="adminLogout">Déconnexion</button></div>
+      <div class="admin-tabs"><button class="active" data-admin-tab="products" data-i18n="adminProducts">Produits</button><button data-admin-tab="orders" data-i18n="adminOrders">Commandes</button><button data-admin-tab="settings" data-i18n="adminSettings">Boutique</button></div>
+      <section id="admin-products" class="admin-view"></section>
+      <section id="admin-orders" class="admin-view hidden"></section>
+      <section id="admin-settings" class="admin-view hidden"></section>
+    </div>
+  </dialog>
+  <div class="toast hidden" id="toast" role="status"></div>
+</body>
+</html>
