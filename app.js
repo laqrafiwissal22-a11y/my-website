@@ -152,12 +152,35 @@ async function loadStore() {
 }
 async function loadProducts() {
   try {
+    // Prefer the live API when a backend is configured.
     products = await api("/api/products");
-    renderCategories(); renderProducts();
-  } catch (error) {
-    console.error("Could not load products:", error);
-    $("#product-grid").innerHTML = `<p class="empty-state">${escapeHTML(t("nothingToShow"))}</p>`;
+  } catch (apiError) {
+    // Netlify static hosting has no /api server by itself. Use the bundled
+    // catalog.json as a safe read-only fallback so the public shop still works.
+    console.warn("Products API unavailable; loading the bundled catalog instead:", apiError);
+    try {
+      const response = await fetch("/catalog.json", { cache: "no-cache" });
+      if (!response.ok) throw new Error(`catalog.json: HTTP ${response.status}`);
+      const catalog = await response.json();
+      products = catalog.map((product, index) => ({
+        id: index + 1,
+        price: null,
+        reference_price: null,
+        cost_price: null,
+        stock: 0,
+        active: true,
+        description: "",
+        gallery: [],
+        ...product
+      }));
+    } catch (catalogError) {
+      console.error("Could not load products from API or catalog.json:", catalogError);
+      products = [];
+      $("#product-grid").innerHTML = `<p class="empty-state">${escapeHTML(t("nothingToShow"))}</p>`;
+      return;
+    }
   }
+  renderCategories(); renderProducts();
 }
 function renderCategories() {
   const present = [...new Set(products.map(product => product.category))];
