@@ -86,7 +86,7 @@ const sumLabels = { fr: { subtotal: "Sous-total produits", shipping: "Livraison"
 const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
 const escapeHTML = value => String(value ?? "").replace(/[&<>"']/g, char => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
-let language = localStorage.getItem("enassime-language") === "fr" ? "fr" : "ar";
+let language = (() => { try { return localStorage.getItem("enassime-language") === "fr" ? "fr" : "ar"; } catch { return "ar"; } })();
 let products = [];
 let store = { shipping_fee: "", cod_enabled: "false" };
 let cart = readStorage("enassime-cart", []);
@@ -105,7 +105,7 @@ function money(amount) {
   if (amount === null || amount === undefined || amount === "") return "";
   return new Intl.NumberFormat(language === "ar" ? "ar-MA" : "fr-MA", { maximumFractionDigits: 2 }).format(Number(amount)) + " " + t("currency");
 }
-function saveStorage(key, value) { localStorage.setItem(key, JSON.stringify(value)); }
+function saveStorage(key, value) { try { localStorage.setItem(key, JSON.stringify(value)); } catch {} }
 function waLink(message) { return "https://wa.me/" + storePhone + "?text=" + encodeURIComponent(message); }
 function showToast(message) {
   const toast = $("#toast"); toast.textContent = message; toast.classList.remove("hidden");
@@ -123,7 +123,7 @@ async function api(url, options = {}) {
 }
 function setLanguage(next) {
   language = next;
-  localStorage.setItem("enassime-language", language);
+  try { localStorage.setItem("enassime-language", language); } catch {}
   document.documentElement.lang = language;
   document.documentElement.dir = language === "ar" ? "rtl" : "ltr";
   $$("[data-i18n]").forEach(node => { const key = node.dataset.i18n; if (translations[language][key]) node.textContent = t(key); });
@@ -153,7 +153,14 @@ async function loadStore() {
 async function loadProducts() {
   try {
     // Prefer the live API when a backend is configured.
-    products = await api("/api/products");
+    const apiProducts = await api("/api/products");
+    // A static Netlify redirect can return index.html with HTTP 200 for an
+    // unknown /api route. Treat anything other than a product array as an
+    // unavailable API and fall back to catalog.json.
+    if (!Array.isArray(apiProducts)) {
+      throw new Error("Products API did not return a product array");
+    }
+    products = apiProducts;
   } catch (apiError) {
     // Netlify static hosting has no /api server by itself. Use the bundled
     // catalog.json as a safe read-only fallback so the public shop still works.
@@ -180,9 +187,11 @@ async function loadProducts() {
       return;
     }
   }
+  if (!Array.isArray(products)) products = [];
   renderCategories(); renderProducts();
 }
 function renderCategories() {
+  if (!Array.isArray(products)) products = [];
   const present = [...new Set(products.map(product => product.category))];
   const select = $("#category-filter");
   const selected = select.value;
@@ -199,6 +208,7 @@ function renderCategories() {
   $("#product-count").textContent = language === "ar" ? `${products.length} منتج` : `${products.length} produits`;
 }
 function visibleProducts() {
+  if (!Array.isArray(products)) products = [];
   const query = $("#search-input").value.trim().toLocaleLowerCase(language === "ar" ? "ar" : "fr");
   const category = $("#category-filter").value;
   const max = Number($("#price-filter").value);
@@ -297,7 +307,7 @@ function renderProductPage() {
       <div><div class="product-page-image"><img id="product-gallery-main" src="${escapeHTML(product.image)}" alt="${escapeHTML(localizedName(product))}"></div>${gallery.length > 1 ? `<div class="product-gallery-thumbs">${gallery.map((image, index) => `<button type="button" class="${index === 0 ? "active" : ""}" data-gallery-image="${escapeHTML(image)}" aria-label="${escapeHTML(language === "ar" ? `الصورة ${index + 1}` : `Photo ${index + 1}`)}"><img src="${escapeHTML(image)}" alt="" loading="lazy"></button>`).join("")}</div>` : ""}</div>
       <div class="product-page-copy"><span class="eyebrow">${escapeHTML(localizedCategory(product.category))}</span><h1>${escapeHTML(localizedName(product))}</h1>
         <p class="product-page-description">${escapeHTML(description)}</p>
-        <p class="product-page-price">${escapeHTML(productPrice(product))}</p>
+        <p class="product-page-price">${productPrice(product)}</p>
         <p class="product-page-note">${escapeHTML(t("priceMarketWarning"))}</p>
         <div class="product-page-actions"><button class="button button-dark" id="product-page-buy">${escapeHTML(isPurchasable(product) ? t("addToCart") : t("askPrice"))}</button><button class="button button-outline" id="product-page-favorite">${favorites.includes(product.id) ? "♥" : "♡"} ${escapeHTML(t("favorites"))}</button></div>
         <div class="product-page-reassurance"><span>◇</span>${escapeHTML(t("priceNote"))}</div>
