@@ -4,329 +4,470 @@
     "name_fr": "Crème de nuit Balea",
     "name_ar": "كريم ليلي Balea",
     "category": "Soin du visage",
-    "image": "/001.jpg"
+    "image": "/001.jpg",
+    "price": 80,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "appareil-soin-visage",
     "name_fr": "Appareil de soin du visage",
     "name_ar": "جهاز للعناية بالوجه",
     "category": "Accessoires beauté",
-    "image": "/002.jpg"
+    "image": "/002.jpg",
+    "price": 60,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "isdin-photoprotection",
     "name_fr": "Photoprotection ISDIN",
     "name_ar": "واقي الشمس ISDIN",
     "category": "Soin du visage",
-    "image": "/003.jpg"
+    "image": "/003.jpg",
+    "price": 270,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "coffret-soin-jaune",
     "name_fr": "Coffret de soin visage",
     "name_ar": "طقم للعناية بالوجه",
     "category": "Soin du visage",
-    "image": "/004.jpg"
+    "image": "/004.jpg",
+    "price": 60,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "soins-visage-clinique",
     "name_fr": "Soins visage Clinique",
     "name_ar": "عناية بالوجه Clinique",
     "category": "Soin du visage",
-    "image": "/005.jpg"
+    "image": "/005.jpg",
+    "price": 180,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "soin-corps-dr-clinic",
     "name_fr": "Soin pour le corps Dr.Clinic",
     "name_ar": "عناية بالجسم Dr.Clinic",
     "category": "Soin du corps",
-    "image": "/006.jpg"
+    "image": "/006.jpg",
+    "price": 200,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "vitamine-e",
     "name_fr": "Soin à la vitamine E",
     "name_ar": "عناية بفيتامين E",
     "category": "Soin du visage",
-    "image": "/007.jpg"
+    "image": "/007.jpg",
+    "price": 30,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "disaar-vitamine-c",
     "name_fr": "Soin vitamine C Disaar",
     "name_ar": "عناية بفيتامين C Disaar",
     "category": "Soin du visage",
-    "image": "/008.jpg"
+    "image": "/008.jpg",
+    "price": 50,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "selection-soins-colores",
     "name_fr": "Sélection de soins visage",
     "name_ar": "مجموعة عناية بالوجه",
     "category": "Soin du visage",
-    "image": "/009.jpg"
+    "image": "/009.jpg",
+    "price": null,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "assortiment-soins-visage",
     "name_fr": "Assortiment de soins beauté",
     "name_ar": "تشكيلة مستحضرات العناية",
     "category": "Soin du visage",
-    "image": "/010.jpg"
+    "image": "/010.jpg",
+    "price": 30,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "balea-creme-jour",
     "name_fr": "Soin de jour Balea",
     "name_ar": "كريم نهاري Balea",
     "category": "Soin du visage",
-    "image": "/011.jpg"
+    "image": "/011.jpg",
+    "price": 80,
+    "reference_price": null,
+    "stock": 1
   },
   {
     "slug": "appareil-beaute-rose",
     "name_fr": "Accessoire beauté électrique",
     "name_ar": "جهاز كهربائي للعناية",
     "category": "Accessoires beauté",
-    "image": "/012.jpg"
+    "image": "/012.jpg",
+    "price": 50,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "baumes-levres-assortis",
     "name_fr": "Baumes à lèvres assortis",
     "name_ar": "مرطبات شفاه متنوعة",
     "category": "Maquillage",
-    "image": "/013.jpg"
+    "image": "/013.jpg",
+    "price": 20,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "soin-visage-boite-noire",
     "name_fr": "Soin visage en boîte",
     "name_ar": "منتج للعناية بالوجه",
     "category": "Soin du visage",
-    "image": "/014.jpg"
+    "image": "/014.jpg",
+    "price": 45,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "soin-visage-soleibian",
     "name_fr": "Soin visage Soleibian",
     "name_ar": "عناية بالوجه Soleibian",
     "category": "Soin du visage",
-    "image": "/015.jpg"
+    "image": "/015.jpg",
+    "price": 150,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "protection-solaire-spf50",
     "name_fr": "Protection solaire SPF 50+",
     "name_ar": "واقي الشمس SPF 50+",
     "category": "Soin du visage",
-    "image": "/016.jpg"
+    "image": "/016.jpg",
+    "price": 100,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "masque-black-mask",
     "name_fr": "Masque visage Black Mask",
     "name_ar": "قناع الوجه Black Mask",
     "category": "Soin du visage",
-    "image": "/017.jpg"
+    "image": "/017.jpg",
+    "price": 30,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "savon-dove",
     "name_fr": "Savon Dove",
     "name_ar": "صابون Dove",
     "category": "Soin du corps",
-    "image": "/018.jpg"
+    "image": "/018.jpg",
+    "price": 13,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "soin-deodorant-vert",
     "name_fr": "Soin et déodorant",
     "name_ar": "عناية ومزيل للعرق",
     "category": "Soin du corps",
-    "image": "/019.jpg"
+    "image": "/019.jpg",
+    "price": 20,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "soin-qleskin",
     "name_fr": "Soin visage Qleskin",
     "name_ar": "عناية بالوجه Qleskin",
     "category": "Soin du visage",
-    "image": "/020.jpg"
+    "image": "/020.jpg",
+    "price": 20,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "soin-natural-bright",
     "name_fr": "Soin Natural Bright",
     "name_ar": "عناية Natural Bright",
     "category": "Soin du visage",
-    "image": "/021.jpg"
+    "image": "/021.jpg",
+    "price": 50,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "creme-soin-rouge",
     "name_fr": "Crème de soin",
     "name_ar": "كريم للعناية",
     "category": "Soin du visage",
-    "image": "/022.jpg"
+    "image": "/022.jpg",
+    "price": 10,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "seche-cheveux-compact",
     "name_fr": "Sèche-cheveux compact",
     "name_ar": "مجفف شعر",
     "category": "Cheveux",
-    "image": "/023.jpg"
+    "image": "/023.jpg",
+    "price": 220,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "crayons-maquillage-yeux",
     "name_fr": "Crayons de maquillage pour les yeux",
     "name_ar": "أقلام مكياج للعيون",
     "category": "Maquillage",
-    "image": "/024.jpg"
+    "image": "/024.jpg",
+    "price": 30,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "savon-shamos",
     "name_fr": "Soin en pain Shamos",
     "name_ar": "منتج عناية Shamos",
     "category": "Soin du corps",
-    "image": "/025.jpg"
+    "image": "/025.jpg",
+    "price": 20,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "shampoing-finny",
     "name_fr": "Shampoing Finny",
     "name_ar": "شامبو Finny",
     "category": "Cheveux",
-    "image": "/026.jpg"
+    "image": "/026.jpg",
+    "price": 20,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "vaseline-aloe",
     "name_fr": "Gelée de soin à l'aloe vera Vaseline",
     "name_ar": "جل للعناية بالصبار Vaseline",
     "category": "Soin du corps",
-    "image": "/027.jpg"
+    "image": "/027.jpg",
+    "price": 50,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "laits-corps-nivea",
     "name_fr": "Laits pour le corps Nivea",
     "name_ar": "حليب الجسم Nivea",
     "category": "Soin du corps",
-    "image": "/028.jpg"
+    "image": "/028.jpg",
+    "price": 50,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "mini-parfums-assortis",
     "name_fr": "Mini parfums assortis",
     "name_ar": "عطور صغيرة متنوعة",
     "category": "Parfums",
-    "image": "/029.jpg"
+    "image": "/029.jpg",
+    "price": 45,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "gel-douche-lux",
     "name_fr": "Gels douche Lux",
     "name_ar": "جل الاستحمام Lux",
     "category": "Soin du corps",
-    "image": "/030.jpg"
+    "image": "/030.jpg",
+    "price": 45,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "masques-visage-assortis",
     "name_fr": "Masques visage assortis",
     "name_ar": "أقنعة وجه متنوعة",
     "category": "Soin du visage",
-    "image": "/031.jpg"
+    "image": "/031.jpg",
+    "price": 15,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "brumes-parfumees",
     "name_fr": "Brumes parfumées",
     "name_ar": "رذاذ معطر",
     "category": "Parfums",
-    "image": "/032.jpg"
+    "image": "/032.jpg",
+    "price": 30,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "soin-cheveux-pot",
     "name_fr": "Soin pour cheveux en pot",
     "name_ar": "عناية بالشعر",
     "category": "Cheveux",
-    "image": "/033.jpg"
+    "image": "/033.jpg",
+    "price": 20,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "seche-cheveux-brush",
     "name_fr": "Sèche-cheveux avec accessoires",
     "name_ar": "مجفف شعر مع ملحقات",
     "category": "Cheveux",
-    "image": "/034.jpg"
+    "image": "/034.jpg",
+    "price": 180,
+    "reference_price": null,
+    "stock": 1
   },
   {
     "slug": "cire-coiffante",
     "name_fr": "Cire coiffante",
     "name_ar": "شمع لتصفيف الشعر",
     "category": "Cheveux",
-    "image": "/035.jpg"
+    "image": "/035.jpg",
+    "price": 30,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "soin-coiffant-capillus",
     "name_fr": "Soin coiffant Capillus",
     "name_ar": "عناية وتصفيف الشعر Capillus",
     "category": "Cheveux",
-    "image": "/036.jpg"
+    "image": "/036.jpg",
+    "price": 30,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "soins-cheveux-assortis",
     "name_fr": "Soins pour cheveux assortis",
     "name_ar": "منتجات متنوعة للشعر",
     "category": "Cheveux",
-    "image": "/037.jpg"
+    "image": "/037.jpg",
+    "price": 40,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "keratine-collagene",
     "name_fr": "Soins capillaires kératine et collagène",
     "name_ar": "عناية للشعر بالكيراتين والكولاجين",
     "category": "Cheveux",
-    "image": "/038.jpg"
+    "image": "/038.jpg",
+    "price": 30,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "keratin-queen",
     "name_fr": "Soin capillaire Keratin Queen",
     "name_ar": "عناية للشعر Keratin Queen",
     "category": "Cheveux",
-    "image": "/039.jpg"
+    "image": "/039.jpg",
+    "price": 10,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "shampoing-derhum",
     "name_fr": "Shampoing aux plantes Derhum",
     "name_ar": "شامبو أعشاب Derhum",
     "category": "Cheveux",
-    "image": "/040.jpg"
+    "image": "/040.jpg",
+    "price": 40,
+    "reference_price": null,
+    "stock": 1
   },
   {
     "slug": "soins-cheveux-disaar",
     "name_fr": "Soins capillaires Disaar",
     "name_ar": "عناية بالشعر Disaar",
     "category": "Cheveux",
-    "image": "/041.jpg"
+    "image": "/041.jpg",
+    "price": 45,
+    "reference_price": null,
+    "stock": 1
   },
   {
     "slug": "shampoing-elegance-plus",
     "name_fr": "Shampoing et après-shampoing Elegance Plus",
     "name_ar": "شامبو وبلسم Elegance Plus",
     "category": "Cheveux",
-    "image": "/042.jpg"
+    "image": "/042.jpg",
+    "price": 70,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "masque-cheveux-dream",
     "name_fr": "Masque capillaire",
     "name_ar": "قناع للشعر",
     "category": "Cheveux",
-    "image": "/043.jpg"
+    "image": "/043.jpg",
+    "price": 45,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "trousses-maquillage",
     "name_fr": "Trousses de rangement",
     "name_ar": "حقائب صغيرة للتخزين",
     "category": "Accessoires beauté",
-    "image": "/044.jpg"
+    "image": "/044.jpg",
+    "price": 50,
+    "reference_price": null,
+    "stock": 1
   },
   {
     "slug": "lisseur-cheveux",
     "name_fr": "Lisseur cheveux",
     "name_ar": "مملس شعر",
     "category": "Cheveux",
-    "image": "/045.jpg"
+    "image": "/045.jpg",
+    "price": 150,
+    "reference_price": null,
+    "stock": 1
   },
   {
     "slug": "deodorants-fa",
     "name_fr": "Déodorants Fa",
     "name_ar": "مزيل العرق Fa",
     "category": "Soin du corps",
-    "image": "/046.jpg"
+    "image": "/046.jpg",
+    "price": 20,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "bracelet-perles-bleues",
     "name_fr": "Bracelet à perles bleues",
     "name_ar": "سوار بالخرز الأزرق",
     "category": "Accessoires",
-    "image": "/047.jpg"
+    "image": "/047.jpg",
+    "price": 100,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "montre-doree",
@@ -336,97 +477,139 @@
     "image": "/048.jpg",
     "images": [
       "/055.jpg"
-    ]
+    ],
+    "price": 120,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "bracelets-assortis",
     "name_fr": "Bracelets assortis",
     "name_ar": "أساور متنوعة",
     "category": "Accessoires",
-    "image": "/049.jpg"
+    "image": "/049.jpg",
+    "price": 100,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "parure-bijoux-claire",
     "name_fr": "Parure de bijoux",
     "name_ar": "طقم مجوهرات",
     "category": "Accessoires",
-    "image": "/050.jpg"
+    "image": "/050.jpg",
+    "price": 220,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "parure-bijoux-doree",
     "name_fr": "Parure de bijoux dorée",
     "name_ar": "طقم مجوهرات ذهبي",
     "category": "Accessoires",
-    "image": "/051.jpg"
+    "image": "/051.jpg",
+    "price": 180,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "collier-bijoux",
     "name_fr": "Collier et bijoux assortis",
     "name_ar": "قلادة ومجوهرات متنوعة",
     "category": "Accessoires",
-    "image": "/052.jpg"
+    "image": "/052.jpg",
+    "price": 150,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "assortiment-beaute",
     "name_fr": "Assortiment de petits produits beauté",
     "name_ar": "تشكيلة منتجات تجميل صغيرة",
     "category": "Accessoires beauté",
-    "image": "/053.jpg"
+    "image": "/053.jpg",
+    "price": 50,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "bracelets-couple",
     "name_fr": "Bracelets assortis",
     "name_ar": "أساور متنوعة",
     "category": "Accessoires",
-    "image": "/054.jpg"
+    "image": "/054.jpg",
+    "price": 100,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "brosse-sechante",
     "name_fr": "Brosse coiffante",
     "name_ar": "فرشاة لتصفيف الشعر",
     "category": "Cheveux",
-    "image": "/056.jpg"
+    "image": "/056.jpg",
+    "price": 50,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "brosse-soufflante",
     "name_fr": "Brosse soufflante coiffante",
     "name_ar": "فرشاة هواء لتصفيف الشعر",
     "category": "Cheveux",
-    "image": "/057.jpg"
+    "image": "/057.jpg",
+    "price": 150,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "parfum-coffret-jaune",
     "name_fr": "Parfum en coffret",
     "name_ar": "عطر في علبة",
     "category": "Parfums",
-    "image": "/058.jpg"
+    "image": "/058.jpg",
+    "price": 60,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "tondeuse-barbe",
     "name_fr": "Tondeuse de précision",
     "name_ar": "آلة تشذيب دقيقة",
     "category": "Accessoires beauté",
-    "image": "/059.jpg"
+    "image": "/059.jpg",
+    "price": 60,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "gel-rasage-gillette",
     "name_fr": "Gel de rasage Gillette",
     "name_ar": "جل الحلاقة Gillette",
     "category": "Soin du corps",
-    "image": "/060.jpg"
+    "image": "/060.jpg",
+    "price": 40,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "maquillage-levres",
     "name_fr": "Maquillage pour les lèvres",
     "name_ar": "مكياج للشفاه",
     "category": "Maquillage",
-    "image": "/061.jpg"
+    "image": "/061.jpg",
+    "price": 20,
+    "reference_price": null,
+    "stock": 10
   },
   {
     "slug": "shampoing-derhum-herbal",
     "name_fr": "Shampoing aux plantes Derhum",
     "name_ar": "شامبو أعشاب Derhum",
     "category": "Cheveux",
-    "image": "/062.jpg"
+    "image": "/062.jpg",
+    "price": 40,
+    "reference_price": null,
+    "stock": 10
   }
 ]
